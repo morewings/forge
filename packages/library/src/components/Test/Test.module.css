@@ -1,0 +1,8 @@
+.test {
+    --parent: red;
+    --child: green;
+    color: var(--parent);
+    & .child {
+        color: var(--child);
+    }
+}

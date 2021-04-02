@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "name": "design-library-forge",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start:library": "yarn workspace library start",
+    "start": "concurrently --kill-others-on-fail \"yarn start:library\""
+  },
+  "dependencies": {
+    "concurrently": "^6.0.0"
+  }
+}

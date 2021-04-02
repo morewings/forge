@@ -1,0 +1,52 @@
+{
+  "name": "library",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "dist/main/index.js",
+  "module": "dist/module/index.js",
+  "browser": "dist/browser/index.html",
+  "sideEffects": false,
+  "targets": {
+    "module": {
+      "outputFormat": "esmodule",
+      "isLibrary": true
+    },
+    "browser": {
+      "includeNodeModules": true
+    }
+  },
+  "scripts": {
+    "start": "npx parcel serve ./src/index.html",
+    "test": "npx jest --watch",
+    "build": "npx parcel build --target browser ./src/index.html",
+    "build:lib": "npx parcel build --target module ./src/lib.js"
+  },
+  "browserslist": [
+    "last 1 version",
+    "maintained node versions"
+  ],
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.10",
+    "@testing-library/react": "^11.2.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.13",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.13.13",
+    "@parcel/transformer-image": "2.0.0-beta.2",
+    "@testing-library/dom": "^7.30.1",
+    "@testing-library/react-hooks": "5.0.3",
+    "@testing-library/user-event": "12.7.1",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3",
+    "jest-css-modules-transform": "^4.2.0",
+    "parcel": "^2.0.0-beta.2",
+    "postcss": "^8.2.8",
+    "postcss-css-variables": "^0.17.0",
+    "postcss-modules": "^4.0.0",
+    "postcss-preset-env": "^6.7.0"
+  }
+}
