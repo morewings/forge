@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { Button } from './Button';
+import { Button } from 'forge-library-components';
+import 'forge-library-components/dist/module/lib.css';
 
 export default {
   title: 'Example/Button',
