@@ -1,17 +1,17 @@
 import React from 'react';
 
-import { Button } from 'forge-library-components';
-import 'forge-library-components/dist/module/lib.css';
+import {Button} from 'forge-library';
+import 'forge-library/dist/module/lib.css';
 
 export default {
   title: 'Example/Button',
   component: Button,
   argTypes: {
-    backgroundColor: { control: 'color' },
+    backgroundColor: {control: 'color'},
   },
 };
 
-const Template = (args) => <Button {...args} />;
+const Template = args => <Button {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {

@@ -1,48 +1,13 @@
 {
-  "name": "forge-library",
-  "version": "0.0.1",
-  "private": true,
-  "type": "module",
-  "main": "dist/main/index.js",
-  "module": "dist/module/lib.js",
-  "sideEffects": false,
-  "targets": {
-    "module": {
-      "outputFormat": "esmodule",
-      "isLibrary": true
-    },
-    "storybook": {
-      "outputFormat": "commonjs",
-      "isLibrary": true,
-      "sourceMap": {
-        "inline": true
-      },
-      "distDir": "dist/module/"
-    },
-    "browser": {
-      "includeNodeModules": true,
-      "sourceMap": {
-        "inline": true
-      }
-    }
-  },
+  "name": "eslint-config-forge",
+  "version": "0.1.0",
+  "description": "Shareable eslint config",
+  "main": "index.js",
+  "module": "index.js",
+  "author": "Dima Vyshniakov",
+  "license": "MIT",
   "scripts": {
-    "start": "npx parcel serve --target browser ./src/index.html",
-    "watch": "npx parcel watch --target storybook ./src/lib.js",
-    "test": "npx jest --watch",
-    "build": "npx parcel build --target browser ./src/index.html",
-    "build:lib": "npx parcel build --target module ./src/lib.js",
-    "fix:js": "npx eslint --fix ./src"
-  },
-  "browserslist": [
-    "last 1 version",
-    "maintained node versions"
-  ],
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.10",
-    "@testing-library/react": "^11.2.5",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "fix:js": "npx eslint --config index.js --fix *.js"
   },
   "devDependencies": {
     "@babel/core": "^7.13.13",
@@ -58,7 +23,6 @@
     "babel-jest": "^26.6.3",
     "eslint": "^7.24.0",
     "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-forge": "^0.1.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-config-react-app": "^6.0.0",
     "eslint-import-resolver-parcel": "^1.10.6",

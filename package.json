@@ -1,6 +1,7 @@
 {
   "private": true,
   "name": "design-library-forge",
+  "type": "module",
   "workspaces": [
     "packages/*"
   ],
@@ -8,12 +9,12 @@
     "watch:library": "yarn workspace forge-library watch",
     "start:library": "yarn workspace forge-library start",
     "start:docs": "yarn workspace forge-docs storybook",
-    "start": "concurrently --kill-others-on-fail \"yarn watch:library\" \"yarn start:docs\"",
+    "start": "run-p watch:library start:docs",
     "prepare": "husky install"
   },
   "dependencies": {
-    "concurrently": "^6.0.0",
     "husky": "^6.0.0",
-    "lint-staged": "^10.5.4"
+    "lint-staged": "^10.5.4",
+    "npm-run-all": "^4.1.5"
   }
 }
