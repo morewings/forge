@@ -1,5 +1,5 @@
 import React from "react";
-import classes from './Button.module.css';
+import * as classes from './Button.module.css';
 
 export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
   const mode = primary ? classes.primary : classes.secondary;
@@ -10,6 +10,7 @@ export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
       style={backgroundColor && { backgroundColor }}
       {...props}
     >
+      hello
       {label}
     </button>
   );
