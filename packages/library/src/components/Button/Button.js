@@ -1,15 +1,15 @@
-import React from "react";
+/*eslint-disable*/
+import React from 'react';
 import * as classes from './Button.module.css';
 
-export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
+export const Button = ({primary, backgroundColor, size, label, ...props}) => {
   const mode = primary ? classes.primary : classes.secondary;
   return (
     <button
       type="button"
       className={[classes.button, classes[size], mode].join(' ')}
-      style={backgroundColor && { backgroundColor }}
-      {...props}
-    >
+      style={backgroundColor && {backgroundColor}}
+      {...props}>
       hello
       {label}
     </button>
