@@ -1,10 +1,10 @@
 import React from 'react';
 import {render} from '@testing-library/react';
-import Test from './Test';
+import App from './App';
 
-describe('Test', () => {
+describe('App', () => {
   it('renders', () => {
-    const {asFragment} = render(<Test />)
+    const {asFragment} = render(<App />);
     expect(asFragment()).toMatchSnapshot();
-  })
-})
+  });
+});
