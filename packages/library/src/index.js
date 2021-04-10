@@ -7,3 +7,5 @@ render(<App />, document.getElementById("root"));
 const a = 'b';
 
 a = 'c';
+
+a = 'd'
