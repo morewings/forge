@@ -49,7 +49,7 @@ module.exports = {
         ],
       },
     ],
-    'import/no-unresolved': [2, {ignore: ['^url:(.*)']}]
+    'import/no-unresolved': [2, {ignore: ['^url:(.*)']}],
   },
   plugins: ['eslint-plugin-prettier', 'fp', 'jest'],
   settings: {
