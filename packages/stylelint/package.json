@@ -1,0 +1,8 @@
+{
+  "name": "styleling-config-forge",
+  "version": "0.1.0",
+  "description": "Forge design library monorepo shareable stylelint config",
+  "main": "index.js",
+  "author": "Dima Vyshniakov",
+  "license": "MIT"
+}

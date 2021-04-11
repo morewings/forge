@@ -16,19 +16,6 @@ module.exports = {
     'object-curly-spacing': ['error', 'never'],
     // Throw warning instead of error. Feel free to choose your favorite option https://eslint.org/docs/rules/arrow-body-style
     'arrow-body-style': ['warn', 'as-needed'],
-    // Make prettier code formatting suggestions more verbose.
-    'prettier/prettier': [
-      'warn',
-      {
-        semi: true,
-        singleQuote: true,
-        jsxSingleQuote: false,
-        trailingComma: 'es5',
-        bracketSpacing: false,
-        jsxBracketSameLine: true,
-        arrowParens: 'avoid',
-      },
-    ],
     // Throw warning when <a href="#"> or <a href="javascript:void(0)"> are used. Use <button> instead.
     'jsx-a11y/anchor-is-valid': ['warn', {aspects: ['invalidHref']}],
     // Allow using (props) => <Component /> and ({propName}) => <Component /> syntax.
@@ -61,6 +48,19 @@ module.exports = {
       },
     ],
     'import/no-unresolved': [2, {ignore: ['^url:(.*)', 'forge-library']}],
+    // Make prettier code formatting suggestions more verbose.
+    'prettier/prettier': [
+      'warn',
+      {
+        semi: true,
+        singleQuote: true,
+        jsxSingleQuote: false,
+        trailingComma: 'es5',
+        bracketSpacing: false,
+        jsxBracketSameLine: true,
+        arrowParens: 'avoid',
+      },
+    ],
   },
   plugins: ['eslint-plugin-prettier', 'fp', 'jest'],
   overrides: [
