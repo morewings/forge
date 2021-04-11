@@ -32,7 +32,7 @@
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": ">=4.0.0",
     "eslint": ">=7.24.0",
-    "eslint-plugin-flowtype": "^5.6.0",
+    "eslint-plugin-flowtype": ">=5.6.0",
     "eslint-plugin-fp": ">=2.3.0",
     "eslint-plugin-jest": ">=24.3.4",
     "eslint-plugin-prettier": ">=3.3.1",
