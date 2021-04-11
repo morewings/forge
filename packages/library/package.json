@@ -47,7 +47,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.13.13",
-    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-env": "^7.13.15",
     "@babel/preset-react": "^7.13.13",
     "@parcel/transformer-image": "2.0.0-beta.2",
     "@testing-library/dom": "^7.30.1",
