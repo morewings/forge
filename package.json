@@ -10,7 +10,9 @@
     "start:library": "yarn workspace forge-library start",
     "start:docs": "yarn workspace forge-docs storybook",
     "start": "run-p watch:library start:docs",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "fix:js:all": "yarn workspaces run fix:js",
+    "fix:style:all": "yarn workspaces run fix:style"
   },
   "dependencies": {
     "husky": "^6.0.0",

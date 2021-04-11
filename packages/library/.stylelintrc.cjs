@@ -1,4 +1,4 @@
 module.exports = {
   extends: 'stylelint-config-forge',
-  ignoreFiles: ['**/*.snap', '**/*.json', '**/*.png',]
+  ignoreFiles: ['**/*.snap', '**/*.json', '**/*.png', '**/*.md']
 }
