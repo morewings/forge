@@ -14,11 +14,6 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [10.x, 12.x, 14.x, 15.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
     - uses: actions/checkout@v2
     - uses: c-hive/gha-yarn-cache@v1
@@ -29,5 +24,6 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{ steps.nvm.outputs.NVMRC }}
+    - run: yarn
     - run: yarn fix:js:all
     - run: yarn fix:style:all
