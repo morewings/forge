@@ -17,7 +17,6 @@
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.1.0",
     "eslint-config-react-app": "^6.0.0",
-    "eslint-import-resolver-parcel": "^1.10.6",
     "eslint-plugin-flowtype": "^5.2.0",
     "eslint-plugin-fp": "^2.3.0",
     "eslint-plugin-import": "^2.22.0",
