@@ -8,6 +8,7 @@
     ],
     "@babel/preset-react"
   ],
+  "plugins": ["@parcel/babel-plugin-transform-runtime"],
   "env": {
     "test": {
       "presets": [

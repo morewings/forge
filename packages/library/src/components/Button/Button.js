@@ -10,7 +10,7 @@ export const Button = ({primary, backgroundColor, size, label, ...props}) => {
       className={[classes.button, classes[size], mode].join(' ')}
       style={backgroundColor && {backgroundColor}}
       {...props}>
-      hello
+      hello people
       {label}
     </button>
   );
