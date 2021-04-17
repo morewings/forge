@@ -19,16 +19,10 @@
         "inline": true
       },
       "distDir": "dist/module/"
-    },
-    "browser": {
-      "outputFormat": "global",
-      "sourceMap": {
-        "inline": true
-      }
     }
   },
   "scripts": {
-    "start": "parcel serve --target browser ./src/index.html --open",
+    "start": "parcel serve --target browser ./src/index.html",
     "watch": "npx parcel watch --target storybook ./src/lib.js",
     "test": "npx jest --watch",
     "build": "npx parcel build --target browser ./src/index.html",
@@ -43,6 +37,8 @@
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.5",
+    "css-vars-hook": "^0.2.5",
+    "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },

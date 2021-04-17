@@ -1,17 +1,28 @@
-/*eslint-disable*/
 import React from 'react';
+import PropTypes from 'prop-types';
+import {useVariable} from 'css-vars-hook';
 import * as classes from './Button.module.css';
 
-export const Button = ({primary, backgroundColor, size, label, ...props}) => {
-  const mode = primary ? classes.primary : classes.secondary;
+export const Button = ({label, variant, ...props}) => {
+  const buttonColor = {
+    primary: 'blue',
+    secondary: 'gray',
+    danger: 'red',
+  }[variant];
+  const {setRef, style} = useVariable('color', buttonColor);
   return (
     <button
+      style={style}
+      ref={setRef}
       type="button"
-      className={[classes.button, classes[size], mode].join(' ')}
-      style={backgroundColor && {backgroundColor}}
+      className={classes.button}
       {...props}>
-      hello people
       {label}
     </button>
   );
+};
+
+Button.propTypes = {
+  label: PropTypes.string.isRequired,
+  variant: PropTypes.oneOf(['primary', 'secondary', 'danger']).isRequired,
 };
