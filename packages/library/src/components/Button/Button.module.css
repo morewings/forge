@@ -8,6 +8,10 @@
   font-size: 16px;
   padding: 6px 12px;
 
+  &:hover {
+    box-shadow: 0 0 0 1px var(--color);
+  }
+
   &:active {
     left: 1px;
     position: relative;

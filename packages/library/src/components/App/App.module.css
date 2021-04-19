@@ -8,3 +8,7 @@
     color: var(--child);
   }
 }
+
+.fragment {
+  margin-bottom: 36px;
+}

@@ -1,0 +1,13 @@
+.input {
+  --color: blue;
+
+  border: 1px solid var(--color);
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 6px;
+
+  &:focus {
+    box-shadow: 0 0 0 1px var(--color);
+    outline: none;
+  }
+}
