@@ -17,4 +17,18 @@
     position: relative;
     top: 1px;
   }
+
+  &:disabled {
+    --color: gray !important;
+
+    cursor: not-allowed;
+
+    &:hover {
+      box-shadow: none;
+    }
+
+    &:active {
+      position: static;
+    }
+  }
 }

@@ -10,4 +10,10 @@
     box-shadow: 0 0 0 1px var(--color);
     outline: none;
   }
+
+  &:disabled {
+    --color: gray !important;
+
+    cursor: not-allowed;
+  }
 }
