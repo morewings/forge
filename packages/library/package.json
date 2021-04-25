@@ -5,20 +5,18 @@
   "type": "module",
   "main": "dist/main/index.js",
   "module": "dist/module/lib.js",
-  "browser": "dist/index.html",
   "sideEffects": false,
   "targets": {
     "module": {
       "outputFormat": "esmodule",
-      "isLibrary": true
-    },
-    "storybook": {
-      "outputFormat": "commonjs",
       "isLibrary": true,
-      "sourceMap": {
-        "inline": true
-      },
-      "distDir": "dist/module/"
+      "includeNodeModules": false
+    },
+    "main": {
+      "outputFormat": "commonjs",
+      "includeNodeModules": false,
+      "distDir": "dist/main/",
+      "isLibrary": true
     },
     "browser": {
       "sourceMap": {
@@ -27,11 +25,13 @@
     }
   },
   "scripts": {
+    "clean:dist": "rm -rf dist",
     "start": "parcel serve --target browser ./src/index.html",
-    "watch": "npx parcel watch --target storybook ./src/lib.js",
+    "watch": "npx parcel watch --target main ./src/lib.js",
     "test": "npx jest --watch",
     "build": "npx parcel build --target browser ./src/index.html",
     "build:lib": "npx parcel build --target module ./src/lib.js",
+    "build:main": "npx parcel build --target main ./src/lib.js",
     "fix:js": "npx eslint --fix ./src",
     "fix:style": "npx stylelint --fix ./src"
   },

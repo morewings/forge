@@ -25,7 +25,7 @@ export const Input = ({state, value, type, ...restProps}) => {
 
 Input.propTypes = {
   state: PropTypes.oneOf(['error', 'pristine', 'valid']),
-  type: PropTypes.oneOf(['text', 'number', 'file']),
+  type: PropTypes.oneOf(['text', 'number']),
   value: PropTypes.string.isRequired,
 };
 

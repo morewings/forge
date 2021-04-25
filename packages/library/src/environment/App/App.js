@@ -12,6 +12,7 @@ export const App = () => (
     </div>
     <div className={classes.fragment}>
       <Input
+        type="number"
         value="Hello"
         onChange={() => {
           console.log('hello!');
