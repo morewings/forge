@@ -15,6 +15,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Cancel Previous Runs
+      uses: styfle/cancel-workflow-action@0.9.0
+      with:
+        access_token: ${{ github.token }}
+    - name: Get code and set up cache
     - uses: actions/checkout@v2
     - uses: c-hive/gha-yarn-cache@v1
     - name: Read .nvmrc
@@ -24,6 +29,8 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{ steps.nvm.outputs.NVMRC }}
-    - run: yarn
-    - run: yarn fix:js:all
-    - run: yarn fix:style:all
+    - name: Run yarn tasks
+    - run: |
+        yarn
+        yarn fix:js:all
+        yarn fix:style:all
