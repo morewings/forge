@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {useVariable} from 'css-vars-hook';
+import {filterProps} from '~/src/utils/filterProps';
 import * as classes from './Input.module.css';
 
-export const Input = ({state, value, type, className, ...props}) => {
+export const Input = ({state, value, type, ...restProps}) => {
   const inputColor = {
     pristine: 'blue',
     valid: 'green',
@@ -12,11 +13,12 @@ export const Input = ({state, value, type, className, ...props}) => {
   const {setRef, style} = useVariable('color', inputColor);
   return (
     <input
+      value={value}
       ref={setRef}
       style={style}
       className={classes.input}
       type={type}
-      {...props}
+      {...filterProps(restProps)}
     />
   );
 };
@@ -25,11 +27,9 @@ Input.propTypes = {
   state: PropTypes.oneOf(['error', 'pristine', 'valid']),
   type: PropTypes.oneOf(['text', 'number', 'file']),
   value: PropTypes.string.isRequired,
-  className: PropTypes.string,
 };
 
 Input.defaultProps = {
   state: 'pristine',
   type: 'text',
-  className: '',
 };
