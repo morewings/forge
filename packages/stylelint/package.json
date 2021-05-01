@@ -22,7 +22,7 @@
     "eslint-import-resolver-parcel": "^1.10.6",
     "eslint-plugin-fp": "^2.3.0",
     "eslint-plugin-flowtype": "^5.7.2",
-    "eslint-plugin-jest": "^24.3.5",
+    "eslint-plugin-jest": "^24.3.6",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.8"
