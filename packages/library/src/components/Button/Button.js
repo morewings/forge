@@ -18,12 +18,15 @@ export const Button = ({label, variant, ...restProps}) => {
       type="button"
       className={classes.button}
       {...filterProps(restProps)}>
-      {label}
+      {label} test
     </button>
   );
 };
 
 Button.propTypes = {
+  /**
+   Checks if the button should be disabled
+   */
   label: PropTypes.string.isRequired,
   variant: PropTypes.oneOf(['primary', 'secondary', 'danger']).isRequired,
 };

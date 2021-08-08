@@ -11,7 +11,7 @@
     "build:main": "yarn workspace forge-library build:main",
     "start:library": "yarn workspace forge-library start",
     "start:docs": "yarn workspace forge-docs storybook",
-    "start": "run-s build:library start:docs",
+    "start": "run-p watch:library start:docs",
     "prepare": "husky install",
     "fix:js:all": "yarn workspaces run fix:js",
     "fix:style:all": "yarn workspaces run fix:style"
