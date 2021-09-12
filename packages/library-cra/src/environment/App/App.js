@@ -4,6 +4,7 @@ import classes from './App.module.css';
 
 const App = () => (
   <div className={classes.container}>
+    Hello!
     <Counter initialValue={0} />
   </div>
 );
