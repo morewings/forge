@@ -1,0 +1,4 @@
+{
+  "extends": "stylelint-config-forge",
+  "ignoreFiles": ["**/*.snap", "**/*.json", "**/*.png", "**/*.md"]
+}
