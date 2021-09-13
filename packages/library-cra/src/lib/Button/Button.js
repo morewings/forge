@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {useVariable} from 'css-vars-hook';
-import {filterProps} from '~/src/utils/filterProps';
-import * as classes from './Button.module.css';
+import {filterProps} from 'utils/filterProps';
+import classes from './Button.module.css';
 
-export const Button = ({label, variant, ...restProps}) => {
+export const Button = ({children, variant, ...restProps}) => {
   const buttonColor = {
     primary: 'blue',
     secondary: 'gray',
@@ -18,15 +18,15 @@ export const Button = ({label, variant, ...restProps}) => {
       type="button"
       className={classes.button}
       {...filterProps(restProps)}>
-      {label} test
+      {children}
     </button>
   );
 };
 
 Button.propTypes = {
-  /**
-   Checks if the button should be disabled
-   */
-  label: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
   variant: PropTypes.oneOf(['primary', 'secondary', 'danger']).isRequired,
 };
