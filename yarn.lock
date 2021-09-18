@@ -2132,7 +2132,7 @@
     util-deprecate "^1.0.2"
     uuid-browser "^3.1.0"
 
-"@storybook/addon-actions@6.4.0-alpha.39", "@storybook/addon-actions@^6.4.0-alpha.25":
+"@storybook/addon-actions@6.4.0-alpha.39", "@storybook/addon-actions@^6.4.0-alpha.39":
   version "6.4.0-alpha.39"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-6.4.0-alpha.39.tgz#add2f270a952eed4b4e1da15c741aa819d74d3c5"
   integrity sha512-O+4qrm9KtCxZ4APyqHa1oVAVdTBCej4mXLZ5f6uZaea11LKFLXaWQbK0ntWT6zoczzciR6vUoBSdyq9p5C7Pug==
