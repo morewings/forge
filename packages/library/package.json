@@ -50,7 +50,7 @@
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.6",
-    "@babel/preset-react": "^7.13.13",
+    "@babel/preset-react": "^7.14.5",
     "@parcel/transformer-image": "2.0.0-beta.2",
     "@testing-library/dom": "^7.30.4",
     "@testing-library/react-hooks": "5.1.2",
