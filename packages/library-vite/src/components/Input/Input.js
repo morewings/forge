@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {useVariable} from 'css-vars-hook';
-import {filterProps} from '~/src/utils/filterProps';
 import * as classes from './Input.module.css';
 
 export const Input = ({state, value, type, ...restProps}) => {
@@ -18,7 +17,7 @@ export const Input = ({state, value, type, ...restProps}) => {
       style={style}
       className={classes.input}
       type={type}
-      {...filterProps(restProps)}
+      {...restProps}
     />
   );
 };
