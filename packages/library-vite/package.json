@@ -6,6 +6,7 @@
     "build": "vite build",
     "serve": "vite preview",
     "fix:js": "npx eslint --fix ./src --ext .jsx,.js",
+    "fix:style": "exit 0",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
