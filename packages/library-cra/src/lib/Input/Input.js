@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {useVariable} from 'css-vars-hook';
-import {filterProps} from '~/src/utils/filterProps';
 import * as classes from 'lib/Input/Input.module.css';
+import {filterProps} from 'utils/filterProps';
 
 export const Input = ({state, value, type, ...restProps}) => {
   const inputColor = {

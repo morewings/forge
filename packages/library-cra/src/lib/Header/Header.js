@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import * as classes from 'lib/Header/Header.module.css';
+import classes from 'lib/Header/Header.module.css';
 
 export const Header = ({siteName}) => (
   <div className={classes.header}>{siteName}</div>
