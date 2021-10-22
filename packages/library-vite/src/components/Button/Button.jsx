@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {useVariable} from 'css-vars-hook';
 import classes from './Button.module.css';
 
-export const Button = ({label, variant, ...restProps}) => {
+export const Button = ({label, variant = 'primary', ...restProps}) => {
   const buttonColor = {
     primary: 'blue',
     secondary: 'gray',
@@ -24,7 +24,8 @@ export const Button = ({label, variant, ...restProps}) => {
 
 Button.propTypes = {
   label: PropTypes.string.isRequired,
-  variant: PropTypes.oneOf(['primary', 'secondary', 'danger']).isRequired,
+  // eslint-disable-next-line react/require-default-props
+  variant: PropTypes.oneOf(['primary', 'secondary', 'danger']),
 };
 
 export default Button;
