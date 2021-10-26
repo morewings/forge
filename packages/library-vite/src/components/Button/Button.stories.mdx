@@ -6,11 +6,9 @@ import Button from './Button';
 # Button hello
 
 <Canvas>
-  <Story name="Default">
-    {(args) => <Button {...args} />}
+  <Story name="Tests">
+    {() => <Button label="Hello" />}
   </Story>
 </Canvas>
 
-<Props of={Button} />
-
-<ArgsTable story="Default" />
+<ArgsTable component={Button} />

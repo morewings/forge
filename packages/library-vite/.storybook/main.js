@@ -12,7 +12,7 @@ module.exports = {
   "core": {
     "builder": "storybook-builder-vite"
   },
-  async viteFinal(config) {
+  async viteFinal(config, { configType }) {
     // Fix for storybook-builder-vite bug. Doesn't pick default config.
     config.resolve.alias = {
       '@': path.resolve(__dirname, './src'),
