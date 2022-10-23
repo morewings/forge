@@ -1,6 +1,6 @@
 import autoprefixer from 'autoprefixer';
-import postcssNested from 'postcss-nested';
+import postcssNesting from 'postcss-nesting';
 
 export default {
-    plugins: [autoprefixer, postcssNested]
+    plugins: [autoprefixer, postcssNesting]
 };
