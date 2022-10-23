@@ -21,7 +21,7 @@
     "eslint-config-forge": "^0.1.0",
     "eslint-import-resolver-parcel": "^1.10.6",
     "eslint-plugin-fp": "^2.3.0",
-    "eslint-plugin-flowtype": "^5.7.2",
+    "eslint-plugin-flowtype": "^7.0.0",
     "eslint-plugin-jest": "^24.4.0",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.20.3",
