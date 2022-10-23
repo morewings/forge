@@ -1,5 +1,7 @@
 # Forge design library template
 
+[![Storybook deploy](https://github.com/morewings/forge/actions/workflows/pages.yml/badge.svg)](https://github.com/morewings/forge/actions/workflows/pages.yml)
+
 <img src="./doc-assets/readme-logo.png" alt="Forge logo"/>
 
 **Forge** is a monorepo template. Its purpose is a design library creation and distribution. 
