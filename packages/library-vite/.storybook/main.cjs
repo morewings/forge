@@ -1,6 +1,7 @@
 // use `mergeConfig` to recursively merge Vite options
 const { mergeConfig } = require('vite');
-
+const path = require('path');
+import hq from 'alias-hq';
 
 module.exports = {
   stories: [
@@ -18,5 +19,13 @@ module.exports = {
   },
   features: {
     storyStoreV7: true
-  }
+  },
+  async viteFinal(config, { configType }) {
+    return {
+      ...config,
+      resolve: {
+        alias: hq.get('rollup')
+      },
+    };
+  },
 }
