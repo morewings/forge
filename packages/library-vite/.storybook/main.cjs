@@ -1,7 +1,7 @@
 // use `mergeConfig` to recursively merge Vite options
 const { mergeConfig } = require('vite');
 const path = require('path');
-import hq from 'alias-hq';
+const hq = require('alias-hq');
 
 module.exports = {
   stories: [
