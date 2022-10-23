@@ -6,12 +6,7 @@
     "packages/*"
   ],
   "scripts": {
-    "watch:library": "yarn workspace forge-library watch",
-    "build:library": "yarn workspace forge-library build:lib",
-    "build:main": "yarn workspace forge-library build:main",
-    "start:library": "yarn workspace forge-library start",
-    "start:docs": "yarn workspace forge-docs storybook",
-    "start": "run-p watch:library start:docs",
+    "dev": "yarn workspace react-library storybook",
     "prepare": "husky install",
     "fix:js:all": "yarn workspaces run fix:js",
     "fix:style:all": "yarn workspaces run fix:style"
