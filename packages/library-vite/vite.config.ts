@@ -7,6 +7,5 @@ export default defineConfig({
     plugins: [react()],
     resolve: {
         alias: hq.get('rollup')
-    },
-    base: '/forge/'
+    }
 });
