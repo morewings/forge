@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PostCss renders 1`] = `
+<DocumentFragment>
+  <div>
+    red 
+    <div>
+      green
+    </div>
+  </div>
+</DocumentFragment>
+`;

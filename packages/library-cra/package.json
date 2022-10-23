@@ -31,9 +31,7 @@
     "fix:js": "npx eslint --fix ./src/",
     "lint:js": "npx eslint ./src/",
     "lint:style": "npx stylelint ./src/",
-    "fix:style": "npx stylelint ./src/ --fix",
-    "start:docs": "start-storybook -p 6006 -s public",
-    "build:docs": "build-storybook -s public"
+    "fix:style": "npx stylelint ./src/ --fix"
   },
   "dependencies": {
     "prop-types": "^15.7.2",
@@ -56,12 +54,6 @@
     "@rollup/plugin-babel": "5.3.0",
     "@rollup/plugin-commonjs": "20.0.0",
     "@rollup/plugin-node-resolve": "13.0.4",
-    "@storybook/addon-actions": "6.3.8",
-    "@storybook/addon-essentials": "6.3.8",
-    "@storybook/addon-links": "6.3.8",
-    "@storybook/node-logger": "6.3.8",
-    "@storybook/preset-create-react-app": "3.2.0",
-    "@storybook/react": "6.3.8",
     "@testing-library/jest-dom": "5.14.1",
     "@testing-library/react": "12.0.0",
     "@testing-library/react-hooks": "7.0.2",

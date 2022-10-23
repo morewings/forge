@@ -1,0 +1,19 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+import {Annotations} from './Annotations';
+
+<Meta title="Example / Annotations" component={Annotations} />
+
+# Hello
+
+<Canvas>
+  <Story name="Default" args={{
+    title: 'foo'
+  }}>
+    {args => {
+      return <Annotations {...args}/>
+    }}
+  </Story>
+</Canvas>
+
+<ArgsTable component={Annotations}/>
+
