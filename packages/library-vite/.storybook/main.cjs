@@ -1,5 +1,5 @@
 // use `mergeConfig` to recursively merge Vite options
-const { mergeConfig } = require('vite');
+// const { mergeConfig } = require('vite');
 
 module.exports = {
   stories: [
@@ -17,5 +17,11 @@ module.exports = {
   },
   features: {
     storyStoreV7: true
-  }
+  },
+  async viteFinal(config, { configType }) {
+    return {
+      ...config,
+      base: '/forge/'
+    };
+  },
 }
