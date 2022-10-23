@@ -21,7 +21,7 @@
     "test": "jest -c jest.config.js",
     "test:watch": "yarn test --watch --coverage=false",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build:docs": "build-storybook"
   },
   "dependencies": {
     "react": "^18.2.0",
