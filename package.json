@@ -5,6 +5,7 @@
   "workspaces": [
     "packages/*"
   ],
+  "homepage": "https://morewings.github.io/forge",
   "scripts": {
     "dev": "yarn workspace react-library storybook",
     "build:docs": "yarn workspace react-library build:docs",

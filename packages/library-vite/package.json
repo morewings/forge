@@ -9,7 +9,7 @@
   "engines": {
     "node": ">=16.0.0"
   },
-  "homepage": "https://morewings.github.io/forge/",
+  "homepage": "https://morewings.github.io/forge",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
